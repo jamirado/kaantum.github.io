@@ -1,60 +1,17 @@
-/* Genel Stil */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+.social-media-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.container {
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+.social-media-links img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s;
 }
 
-/* Başlıklar */
-header h1 {
-  font-size: 2.5em;
-  margin: 10px 0;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #aaaaaa;
-}
-
-/* Sosyal Medya Linkleri */
-.social-links {
-  list-style: none;
-  padding: 0;
-}
-
-.social-links li {
-  margin: 10px 0;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #00bcd4;
-  font-weight: bold;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: #ff5722;
-}
-
-/* Footer */
-footer {
-  margin-top: 20px;
-  font-size: 0.9em;
-  color: #666666;
+.social-media-links img:hover {
+  transform: scale(1.1);
 }
