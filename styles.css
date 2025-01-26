@@ -1,3 +1,4 @@
+/* Genel gövde stili */
 body {
   font-family: Arial, sans-serif;
   background-color: #121212;
@@ -7,24 +8,31 @@ body {
   text-align: center;
 }
 
+/* Konteyner düzeni */
 .container {
   padding: 20px;
 }
 
+/* Sosyal medya bağlantıları */
 .social-media-links {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap; /* Taşan logoları bir alt satıra aktarır */
+  gap: 15px; /* Logolar arasında boşluk */
   margin: 20px 0;
 }
 
 .social-media-links img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: transform 0.3s;
+  width: 40px; /* Logoların genişliği */
+  height: 40px; /* Logoların yüksekliği */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Görselleri düzgün oranda sığdırır */
+  display: inline-block;
+  border-radius: 50%; /* Yuvarlak görseller */
+  transition: transform 0.3s; /* Hover animasyonu */
 }
 
 .social-media-links img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Hover durumunda büyütme */
 }
